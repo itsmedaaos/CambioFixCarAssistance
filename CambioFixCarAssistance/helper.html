@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>لوحة المساعد – الطلبات الجديدة</title>
+  <link rel="stylesheet" href="helper.css">
+
+</head>
+<body class="bg-light">
+  <div class="container py-4">
+    <h2 class="text-center mb-4">الطلبات المتاحة للقبول</h2>
+
+    <!-- مثال لبطاقة طلب -->
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">اسم السائق: محمد العريبي</h5>
+        <p class="card-text">نوع الخدمة: تبديل إطار</p>
+        <p class="card-text">الموقع: طرابلس - شارع الجمهورية</p>
+        <a href="helper_request_details.html" class="btn btn-outline-primary">عرض تفاصيل الطلب</a>
+        <button class="btn btn-success ms-2">قبول الطلب</button>
+      </div>
+    </div>
+<div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">اسم السائق: احمد الغزيوي </h5>
+        <p class="card-text">نوع الخدمة: تعبئة بنزين </p>
+        <p class="card-text">الموقع: طرابلس - جرابة </p>
+        <a href="helper_request_details.html?req=1" class="btn btn-outline-primary">عرض تفاصيل الطلب</a>
+        <button class="btn btn-success ms-2">قبول الطلب</button>
+      </div>
+    </div>
+    <!-- كرّر البطاقة السابقة لكل طلب متاح -->
+    
+    <div class="text-center mt-5">
+      <a href="helper_history.html" class="btn btn-primary">عرض سجل الطلبات السابقة</a>
+    </div>
+  </div>
+</body>
+</html>

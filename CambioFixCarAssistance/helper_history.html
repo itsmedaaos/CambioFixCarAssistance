@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>لوحة المساعد – سجل الطلبات السابقة</title>
+    <link rel="stylesheet" href="helper_history.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="container py-4">
+        <h2 class="text-center mb-4">📋 سجل الطلبات السابقة</h2>
+
+        <!-- بطاقة طلب مكتمل -->
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">👤 اسم السائق: <strong>أحمد الزليطني</strong></h5>
+                <p class="card-text">🔧 نوع الخدمة: <strong>شحن بطارية</strong></p>
+                <p class="card-text">📍 الموقع: زليتن - وسط المدينة</p>
+                <p class="card-text">📅 تاريخ الإنجاز: 2025-06-13</p>
+                <p class="card-text">💵 المبلغ الكلي: 10 دينار ليبي</p>
+                <p class="card-text">💰 ربح المساعد: 3 دينار</p>
+
+                <!-- زر عرض التفاصيل داخل الكارد -->
+                <div class="details-btn-wrapper">
+                    <a href="helper_request_details.html?req=2" class="btn btn-outline-secondary">📄 عرض التفاصيل</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- صندوق الملخص -->
+        <div class="summary-box">
+            <h5 class="mb-3 text-primary"> <strong>📊 إجمالي المبالغ والأرباح </strong></h5>
+            <p>💸 إجمالي المبالغ المستلمة: <strong>150 دينار ليبي</strong></p>
+            <p>💼 إجمالي أرباح المساعد: <strong>45 دينار ليبي</strong></p>
+
+            <!-- زر العودة داخل صندوق الملخص -->
+            <div class="back-btn-wrapper">
+                <a href="dashboard_helper.html" class="btn btn-outline-primary">🔙 عودة للطلبات الجديدة</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

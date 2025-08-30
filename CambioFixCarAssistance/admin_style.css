@@ -1,0 +1,101 @@
+body {
+  background: linear-gradient(to bottom right, #f5f7fa, #fff);
+}
+
+.admin-section {
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+.section-header {
+  font-weight: bold;
+  color: #003366;
+  border-bottom: 2px solid #f7941d;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+
+/* فقط للسائقين المعلقين pending-driver */
+.pending-driver {
+  border: 2px dashed #f7941d;
+  background-color: #fffbe6;
+}
+
+/* ضمان مسافة بسيطة بين الأزرار */
+.pending-driver .btn {
+  width: 100px;
+}
+
+/* إخفاء رسالة “لا توجد طلبات” بشكل افتراضي */
+#no-pending {
+  display: none;
+  margin-top: 15px;
+}
+/* تأثير Hover يبقى فقط على الأزرار */
+.btn-primary {
+  background-color: #003366;
+  border-color: #003366;
+}
+
+.btn-primary:hover {
+  background-color: #f7941d;
+  border-color: #f7941d;
+}
+
+.btn-success {
+  background-color: #f7941d;
+  border-color: #f7941d;
+}
+
+.btn-success:hover {
+  background-color: #003366;
+  border-color: #003366;
+}
+header {
+  background-color: #002f6c;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.app-footer {
+  width: 100%;
+  background-color: #f7941d;   /* صحّحنا بإضافة الـ # */
+  color: #fff;
+  padding: 20px 0;
+  position: static;            /* أو relative */
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+/* محتوى الفوتر بداخل container-fluid عشان يمتد للعرض كله */
+.app-footer .container-fluid {
+  max-width: 100%;
+  padding: 0 20px; /* مسافة جانبية إذا حبيتي */
+}
+
+/* توزيع الأعمدة بشكل متساوي */
+.app-footer .row > .col-md {
+  text-align: center;
+  margin-bottom: 10px;
+}

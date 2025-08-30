@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background-color: #fff;
+  direction: rtl;
+
+  /* لتحويل الجسم إلى عمود وحجز المساحة لأسفل الصفحة */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* الحاوية الرئيسية: تحتل المساحة المتبقية وتوسّط المحتوى */
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+}
+
+/* عنوان الصفحة داخل البطاقة */
+h2 {
+  color: #00205b;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* البطاقة */
+.card {
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #fafafa;
+  transition: box-shadow 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* حقول النموذج */
+.card label {
+  display: block;
+  font-size: 18px;
+  margin-left: 15px;
+  color: #333;
+}
+.card input {
+  width: 350px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-right:15px ;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* جسم البطاقة للروابط */
+.card-body {
+  margin-top: 15px;
+}
+
+/* الأزرار */
+.btn {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin: 5px;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: #00205b;
+  color: #fff;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #001a45;
+}
+.btn-outline-primary {
+  color: #00205b;
+  border: 2px solid #00205b;
+  background-color: transparent;
+}
+.btn-outline-primary:hover {
+  background-color: #00205b;
+  color: #fff;
+}
+
+/* لتوسيط محتوى الأزرار */
+.text-center {
+  text-align: center;
+}
+
+/* الشريط الأسفل */
+.bottom-bar {
+  background-color: #f6921e;
+  height: 40px;
+  width: 100%;
+}

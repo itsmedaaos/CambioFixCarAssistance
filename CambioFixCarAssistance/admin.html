@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>لوحة المشرف</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="admin_style.css">
+</head>
+<header>
+  <div class="logo">الشعار</div>
+  <nav>
+    <a href="#">الرئيسية</a>
+    <a href="#">خدماتنا</a>
+    <a href="#">من نحن</a>
+    <a href="#">تسجيل دخول</a>
+  </nav>
+</header>
+
+<body class="bg-light">
+  <div class="container py-4">
+    <h2 class="text-center mb-4">لوحة تحكم المشرف</h2>
+
+    <!-- مربع البحث -->
+    <div class="mb-4">
+      <input type="text" class="form-control" placeholder="🔍 ابحث عن طلب أو مساعد...">
+    </div>
+
+  <!-- قسم قبول/رفض السائقين الجدد -->
+<div class="admin-section">
+  <h4 class="section-header">🚦 طلبات السائقين الجدد</h4>
+  <!-- افترض أن هنا عوضًا عن البيانات الثابتة، ستقوم بإحضار قائمة من السيرفر -->
+  
+  <!-- مثال لكارد سائق واحد -->
+  <div class="card mb-3 pending-driver" style="max-width: 100%;">
+    <div class="row g-0 align-items-center">
+      <div class="col-md-2">
+        <img src="images/driver-placeholder.png" alt="صورة السائق" class="img-fluid p-2" style="max-height: 60px; border-radius: 50%;">
+      </div>
+      <div class="col-md-7">
+        <div class="card-body">
+          <h5 class="card-title">الاسم: فهد العمري</h5>
+          <p class="card-text mb-1"><strong>رقم الهاتف:</strong> 0912345678</p>
+          <p class="card-text"><strong>الموقع:</strong> طرابلس – حي الأندلس</p>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <button class="btn btn-success me-2">قبول</button>
+        <button class="btn btn-danger">رفض</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- كرر البلوك السابق لكل سائق قيد الانتظار -->
+  <!-- في حال عدم وجود طلبات، يمكنك عرض رسالة توضح ذلك -->
+  <p id="no-pending" class="text-center text-muted">لا توجد طلبات سائقين جديدة.</p>
+</div>
+
+    <!-- قسم تتبع الطلبات النشطة -->
+<div class="admin-section">
+  <h4 class="section-header">🚗 تتبع الطلبات النشطة</h4>
+
+  <!-- كارد الطلب النشط -->
+  <div class="card mb-3" style="max-width: 100%;">
+  <div class="row g-0">
+    <!-- صورة على اليمين -->
+    <div class="col-md-2 d-flex align-items-center justify-content-center p-3">
+      <img src="images/tow-truck.png" alt="سحب السيارة" class="img-fluid" style="max-height: 60px;">
+    </div>
+
+    <!-- النص -->
+    <div class="col-md-7 d-flex align-items-center">
+      <div class="card-body">
+        <h5 class="card-title">طلب: سحب السيارة</h5>
+        <p class="card-text mb-1"><strong>العميل:</strong> محمد عيسى</p>
+        <p class="card-text"><strong>المساعد:</strong> سالم الترهوني</p>
+      </div>
+    </div>
+
+    <!-- زر التفاصيل -->
+    <div class="col-md-3 d-flex align-items-center justify-content-center">
+      <a href="Request_etails_Page.html" class="btn btn-primary">عرض التفاصيل</a>
+    </div>
+  </div>
+</div>
+
+  <a href="active_requests.html" class="btn btn-primary">عرض الطلبات النشطة</a>
+</div>
+
+
+   
+    <!-- قسم الطلبات المكتملة -->
+    <div class="admin-section">
+      <h4 class="section-header">✅ جميع الطلبات المكتملة</h4>
+
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-2 d-flex align-items-center justify-content-center p-3">
+            <img src="images/check.png" alt="طلب مكتمل" class="img-fluid" style="max-height: 60px;">
+          </div>
+          <div class="col-md-7 d-flex align-items-center">
+            <div class="card-body">
+              <h5 class="card-title">طلب: تبديل إطار</h5>
+              <p class="card-text mb-1"><strong>العميل:</strong> أحمد زايد</p>
+              <p class="card-text"><strong>المساعد:</strong> أنس البرعصي</p>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex align-items-center justify-content-center">
+            <a href="Completed-Request_Details.html" class="btn btn-primary">عرض التفاصيل</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="completed_requests.html" class="btn btn-primary">عرض الطلبات المكتملة</a>
+    </div>
+
+    <!-- قسم معلومات المساعدين -->
+    <div class="admin-section">
+      <h4 class="section-header">🧑‍🔧 جميع المساعدين</h4>
+
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-2 d-flex align-items-center justify-content-center p-3">
+            <img src="images/helper.png" alt="مساعد" class="img-fluid" style="max-height: 60px;">
+          </div>
+          <div class="col-md-7 d-flex align-items-center">
+            <div class="card-body">
+              <h5 class="card-title">الاسم: خالد المغربي</h5>
+              <p class="card-text mb-1"><strong>رقم الهاتف:</strong> 0911112222</p>
+              <p class="card-text"><strong>الموقع:</strong> بنغازي - وسط المدينة</p>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex align-items-center justify-content-center">
+            <a href="Helper_Details_Page.html" class="btn btn-primary">عرض التفاصيل</a>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  </body>
+
+  
+<footer class="app-footer">
+  <div class="container-fluid">
+    <div class="row text-center text-md-start">
+      <div class="col-md">
+        © 2025 جميع الحقوق محفوظة
+      </div>
+      <div class="col-md">
+        roadassistance@gmail.com
+      </div>
+      <div class="col-md">
+        إشعار قانوني: جميع العلامات التجارية ملك لأصحابها
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</html>
+
